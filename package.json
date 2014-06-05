@@ -1,0 +1,39 @@
+{
+  "name": "find-css-id",
+  "version": "0.0.1",
+  "description": "npm package to find css id into files or directory",
+  "license": "MIT",
+  "main": "cli.js",
+  "scripts": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlessandroMinoccheri/find-css-id.git"
+  },
+  "bin": {
+    "find-css-id": "cli.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "css"
+  ],
+  "author": "Alessandro Minoccheri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlessandroMinoccheri/find-css-id/issues"
+  },
+  "homepage": "https://github.com/AlessandroMinoccheri/find-css-id"
+}

@@ -1,0 +1,11 @@
+#id-to-find{
+	color: white;
+}
+
+#id-to-find, #other-id{
+	border: 1px solid #000;
+}
+
+.id-to-find{
+	color: red;
+}
