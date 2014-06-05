@@ -3,7 +3,7 @@
 var fs = require('fs');
 
 RegExp.quote = function(str) {
-  return (str+'').replace(/([#?*+^$[\]\\(){}|-])/g, "\\$1");
+  return (str+'').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
 };
 
 function getDirectoryFiles(directory, callback) {
@@ -30,7 +30,7 @@ module.exports = function (css_id, name, cb) {
 			    return console.log(err);
 
 			var id_to_find = css_id;
-			var reg = new RegExp('\\.' + RegExp.quote(id_to_find) + '([,:\\s\\.][^\\{]*)?\\{', 'gmi');
+			var reg = new RegExp('\\#' + RegExp.quote(id_to_find) + '([,:\\s\\.][^\\{]*)?\\{', 'gmi');
 			var found = data.match(reg);
 			
 			if((found != '') && (found != null))
