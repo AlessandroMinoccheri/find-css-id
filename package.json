@@ -1,6 +1,6 @@
 {
   "name": "find-css-id",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "npm package to find css id into files or directory",
   "license": "MIT",
   "main": "cli.js",
@@ -29,7 +29,8 @@
   ],
   "keywords": [
     "css",
-    "id"
+    "id",
+    "find"
   ],
   "author": "Alessandro Minoccheri",
   "license": "MIT",
