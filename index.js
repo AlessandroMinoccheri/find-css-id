@@ -3,19 +3,19 @@
 var fs = require('fs');
 
 RegExp.quote = function(str) {
-  return (str+'').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+  return (str + '').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
 };
 
 function getDirectoryFiles(directory, callback) {
     fs.readdir(directory, function(err, files) {
         files.forEach(function(file){
             fs.stat(directory + '/' + file, function(err, stats) {
-                if(stats.isFile()) {
-                  callback(directory + '/' + file);
-                }
-                if(stats.isDirectory()) {
-                  getDirectoryFiles(directory + '/' + file, callback);
-                }
+                if(stats.isFile())
+                  	callback(directory + '/' + file);
+
+                if(stats.isDirectory())
+                  	getDirectoryFiles(directory + '/' + file, callback);
+                
             });
         });
     });

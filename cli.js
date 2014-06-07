@@ -12,7 +12,7 @@ function help() {
 	console.log('  $ find-css-id <css-id-to-find> <folder-or-file-to-search>');
 	console.log('');
 	console.log('Example');
-	console.log('  $ find-css-id clear css/style.css');
+	console.log('  $ find-css-id id-to-find css/style.css');
 }
 
 if (!input || process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help') !== -1) {
