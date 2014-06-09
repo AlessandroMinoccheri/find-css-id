@@ -1,7 +1,7 @@
 find-css-id
 ===========
 
-a npm package to find css id inside your project
+a npm package to find css id inside your html and css files
 
 https://www.npmjs.org/package/find-css-id
 
@@ -31,23 +31,24 @@ $ npm install --global find-css-id
   Usage
 
   ```
-  $ find-css-id <id-to-find> <folder-name-or-css-file>
+  $ find-css-id <id-to-find> <folder-name-or-css-file-or-html-file>
   ```
   
   Example
   
   ```
-  $ find-css-id id-to-find css/style.css
+  $ find-css-id id-to-find project
   ```
 
 It will prints:
 
 ```
+found in index.html 1 match of id-to-find
 found in css/style.css 2 match of id-to-find
 ```
 
 ## OPTIONS
-You can specify in the second argument or the css file, or a directory, the package can search recursively all css files inside the directory and search the id inside that files.
+You can specify in the second argument or the css file, or an html file, or a directory, the package can search recursively all css/hmtl files inside the directory and search the id inside that files.
 
 So you can write this to search inside a directory:
 
@@ -89,7 +90,7 @@ If you would like to see the version of the package you can write into your cons
   It will prints
 
   ```
-  0.0.1
+  0.0.4
   ```
 
 ## License
