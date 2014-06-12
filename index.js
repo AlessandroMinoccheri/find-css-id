@@ -85,7 +85,7 @@ module.exports = function (css_id, name, cb) {
 					}
 					else{
 						if(last_value.indexOf('.html') > 0){
-				  			fs.readFile(name, 'utf8', function (err,data) {
+				  			fs.readFile(file, 'utf8', function (err,data) {
 								if (err)
 								    return console.log(err);
 
@@ -100,7 +100,7 @@ module.exports = function (css_id, name, cb) {
 								else
 									found = 0;
 
-								cb(null, 'found in: ' + name + ': ' + found + ' match of ' + id_to_find);
+								cb(null, 'found in: ' + file + ': ' + found + ' match of ' + id_to_find);
 							});
 						}
 					}
