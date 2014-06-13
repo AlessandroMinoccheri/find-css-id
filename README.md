@@ -1,7 +1,7 @@
 find-css-id
 ===========
 
-a npm package to find css id inside your html and css files
+a npm package to find css id inside your css/html/php files
 
 https://www.npmjs.org/package/find-css-id
 
@@ -44,11 +44,12 @@ It will prints:
 
 ```
 found in index.html 1 match of id-to-find
+found in test.php 2 match of id-to-find
 found in css/style.css 2 match of id-to-find
 ```
 
 ## OPTIONS
-You can specify in the second argument or the css file, or an html file, or a directory, the package can search recursively all css/hmtl files inside the directory and search the id inside that files.
+You can specify in the second argument or the css file, or an html file, or a php file,  or a directory, the package can search recursively all css/hmtl files inside the directory and search the id inside that files.
 
 So you can write this to search inside a directory:
 

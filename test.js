@@ -9,3 +9,20 @@ it('should get match in css test file', function (cb) {
 		cb();
 	});
 });
+
+it('should get match in css test file', function (cb) {
+	find('id-to-find', 'test.html', function (err, finded) {
+		assert(!err, err);
+		assert(finded);
+		cb();
+	});
+});
+
+it('should get match in css test file', function (cb) {
+	find('id-to-find', 'test.php', function (err, finded) {
+		assert(!err, err);
+		assert(finded);
+		cb();
+	});
+});
+
