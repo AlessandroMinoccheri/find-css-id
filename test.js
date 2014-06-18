@@ -35,3 +35,10 @@ it('should get match in css test file', function (cb) {
 	});
 });
 
+it('should get match in css test file', function (cb) {
+	find('id-to-find', 'test/test.tpl', function (err, finded) {
+		assert(!err, err);
+		assert(finded);
+		cb();
+	});
+});
