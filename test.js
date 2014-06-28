@@ -42,3 +42,11 @@ it('should get match in css test file', function (cb) {
 		cb();
 	});
 });
+
+it('should get match in css test file', function (cb) {
+	find('id-to-find', 'test/test.asp', function (err, finded) {
+		assert(!err, err);
+		assert(finded);
+		cb();
+	});
+});

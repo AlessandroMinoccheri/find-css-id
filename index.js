@@ -42,7 +42,7 @@ module.exports = function (css_id, name, cb) {
 		});
 	}
 	else{
-		if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0) || (last_value.indexOf('.ctp') > 0) || (last_value.indexOf('.tpl') > 0)){
+		if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0) || (last_value.indexOf('.ctp') > 0) || (last_value.indexOf('.tpl') > 0) || (last_value.indexOf('.asp') > 0)){
   			fs.readFile(name, 'utf8', function (err,data) {
 				if (err)
 				    return console.log(err);
@@ -84,7 +84,7 @@ module.exports = function (css_id, name, cb) {
 					    });
 					}
 					else{
-						if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0) || (last_value.indexOf('.ctp') > 0) || (last_value.indexOf('.tpl') > 0)){
+						if((last_value.indexOf('.html') > 0) || (last_value.indexOf('.php') > 0) || (last_value.indexOf('.ctp') > 0) || (last_value.indexOf('.tpl') > 0) || (last_value.indexOf('.asp') > 0)){
 				  			fs.readFile(file, 'utf8', function (err,data) {
 								if (err)
 								    return console.log(err);
